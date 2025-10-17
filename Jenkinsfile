@@ -8,7 +8,7 @@ pipeline {
     stages {
         stage('Checkout Code') {
             steps {
-                git 'https://github.com/Yashaswini2453/flask-jenkins-terraform-demo.git'  // your repo
+                git ' https://github.com/Yashaswini2453/flask-jenkins-terraform-dem.git'  // your repo
             }
         }
 
