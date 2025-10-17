@@ -6,11 +6,12 @@ pipeline {
     }
 
     stages {
-        stage('Checkout Code') {
-            steps {
-                git ' https://github.com/Yashaswini2453/flask-jenkins-terraform-dem.git'  // your repo
-            }
-        }
+       stage('Checkout Code') {
+    steps {
+        git branch: 'main', url: 'https://github.com/Yashaswini2453/flask-jenkins-terraform-dem.git'
+    }
+}
+
 
         stage('Build Docker Image') {
             steps {
